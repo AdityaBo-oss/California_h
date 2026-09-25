@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy 
 st.title('California House Price Prediction')
-obj=joblib.load(r'C:\Users\PC World\Documents\project File\california_h.joblib')
+obj=joblib.load('california_h.joblib')
 model=obj['model']
 cols=obj['columns']
 st.write('For the Housing Prediction click this button ')
